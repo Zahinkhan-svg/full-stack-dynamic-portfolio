@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    Web Engineering Lab 
+    
+@include('partial.header')
+@include('partial.sidebar')
+@yield('content')
+@include('partial.footer')
+
 </body>
 </html>
