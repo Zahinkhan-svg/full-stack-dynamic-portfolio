@@ -1,33 +1,29 @@
-<nav>
-    <a href="/home">Home</a>
-    <a href="/skills">skills</a>
-    <a href="/Projects">Projects</a>
-</nav>
-<body>
-
-<div>
-            
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fcat%2F&psig=AOvVaw0szzVqzJOTYuwKMcNcxH8r&ust=1760870530998000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKif7oXIrZADFQAAAAAdAAAAABAE" alt="Profile pic" width="100" height="100">
-            
-            <p>Hello I am a CSE student </p>
-
-            <p>Full Name:Zahin Muntaha Khan </p>
-            <p>Title:Fullstack Web developer </p>
-            <p>Quote:Programming isn't about what you know; it's about what you can figure out" by Chris Pine </p>
-            
-        </div>
-
-</body>
+<header class="header">
+    <div class="logo">
+        YourNickname
+    </div>
+    <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/skills">Skills</a>
+        <a href="/contact">contact</a>
+    </nav>
+</header>
 <style>
-.navbar {
-    background-color: white;
-    box-shadow: 0 2px 4px blue;
-    position:fixed;
-    
-}
-.navbar-flex {
+.header{
     display: flex;
     justify-content: space-between;
-    align-item: Center;
-    height: 64px;
+
 }
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav a{
+    font-size: 30px ;
+    text-decoration: none;
+    list-style-type: disc;
+}
+</style>
