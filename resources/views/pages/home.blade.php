@@ -76,7 +76,7 @@
 </script>
 
 <style>
-/* ====== General Layout ====== */
+
 .container {
     display: flex;
     justify-content: center;
