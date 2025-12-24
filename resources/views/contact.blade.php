@@ -1,32 +1,69 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
-@section('title', 'Contact')
+@section('title', 'Contact - Zahin Muntaha Khan')
 
 @section('content')
-<div class="max-w-3xl mx-auto bg-gray-800 p-10 rounded-xl shadow-2xl border border-cyan/30">
-    <h1 class="text-5xl font-extrabold text-gray-100 mb-4 text-center">Get in Touch</h1>
-    <p class="text-center text-gray-400 mb-10">I am available for new job opportunities or to discuss complex projects.</p>
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1 class="display-4 fw-bold mb-4">Get in Touch</h1>
+                        <p class="lead mb-5">I am available for new job opportunities or to discuss complex projects.</p>
 
-    <div class="space-y-6">
-        <div class="flex items-center p-4 bg-gray-900 rounded-lg border-l-4 border-cyan">
-            <svg class="w-6 h-6 text-cyan mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-            <div>
-                <p class="font-semibold text-gray-300">Email</p>
-                <a href="mailto:khan22205101473@diu.edu.bd" class="text-cyan hover:underline">khan22205101473@diu.edu.bd</a>
-            </div>
-        </div>
-        
-        <div class="flex items-center p-4 bg-gray-900 rounded-lg border-l-4 border-cyan">
-            <svg class="w-6 h-6 text-cyan mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            <div>
-                <p class="font-semibold text-gray-300">GitHub</p>
-                <a href="[Zahin's GitHub Profile Link]" target="_blank" class="text-cyan hover:underline">[GitHub Profile]</a>
-            </div>
-        </div>
-        
-        <div class="text-center pt-6">
-            <p class="text-gray-500">I usually respond quickly.</p>
-        </div>
-    </div>
-</div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-body">
+                                        <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                                        <h5 class="card-title">Email</h5>
+                                        <a href="mailto:khan22205101473@diu.edu.bd" class="text-decoration-none">khan22205101473@diu.edu.bd</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-body">
+                                        <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                                        <h5 class="card-title">Phone</h5>
+                                        <p class="mb-0">01707492266</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-body">
+                                        <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                                        <h5 class="card-title">Address</h5>
+                                        <p class="mb-0">Uttar Patuapara, Natore</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-body">
+                                        <i class="fas fa-globe fa-2x text-primary mb-3"></i>
+                                        <h5 class="card-title">Portfolio</h5>
+                                        <a href="https://sites.google.com/diu.edu.bd/zahinmuntahakhan/home" target="_blank" class="text-decoration-none">View Portfolio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h3 class="h4 mb-3">Connect with me</h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/zahin-muntaha-khan-245b96292/?originalSubdomain=bd" target="_blank" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100081554337406" target="_blank" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                            </div>
+                        </div>
+
+                        <p class="text-muted mt-4">I usually respond quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection

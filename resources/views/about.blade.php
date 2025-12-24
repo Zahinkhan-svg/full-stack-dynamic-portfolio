@@ -1,41 +1,56 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
-@section('title', 'About Me')
+@section('title', 'About Me - Zahin Muntaha Khan')
 
 @section('content')
-<div class="bg-gray-800 p-10 rounded-xl shadow-2xl border border-cyan/30">
-    <h1 class="text-5xl font-extrabold text-gray-100 mb-4 border-b border-cyan/50 pb-2">{{ $name }}</h1>
-    <p class="text-2xl text-cyan mb-8">{{ $title }}</p>
-    
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        <div class="lg:col-span-2">
-            <h3 class="text-3xl font-bold text-gray-200 mb-4 border-b-2 border-gray-700 pb-1">Brief Introduction</h3>
-            <p class="text-gray-400 leading-relaxed mb-8">{{ $bio }}</p>
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="display-4 fw-bold text-center mb-4">{{ $name }}</h1>
+                        <p class="lead text-center text-muted mb-5">{{ $title }}</p>
 
-            <h3 class="text-3xl font-bold text-gray-200 mb-4 border-b-2 border-gray-700 pb-1">Education & Experience</h3>
-            <ul class="list-disc list-outside text-gray-400 space-y-3 pl-5 mb-8">
-                <li class="font-semibold text-gray-300">{{ $education }}</li>
-                <li>{{ $experience }}</li>
-            </ul>
-        </div>
-        
-        <div class="bg-gray-900 p-6 rounded-lg shadow-inner border border-gray-700">
-            <h4 class="text-2xl font-bold text-cyan mb-4">Contact</h4>
-            <ul class="space-y-3 text-gray-400">
-                <li>**Email:** khan22205101473@diu.edu.bd</li>
-                <li>**LinkedIn:** [Zahin's LinkedIn Profile Link]</li>
-                <li>**GitHub:** [Zahin's GitHub Profile Link]</li>
-            </ul>
-        </div>
-    </div>
+                        <h3 class="h2 fw-bold mb-4">Brief Introduction</h3>
+                        <p class="mb-5 fs-5">{{ $bio }}</p>
 
-    <h3 class="text-3xl font-bold text-gray-200 mt-10 mb-6 border-b-2 border-gray-700 pb-1">Skills</h3>
-    <div class="flex flex-wrap gap-4">
-        @foreach($skills as $skill)
-            <span class="bg-gray-700 text-cyan text-lg font-medium px-4 py-2 rounded-lg shadow-md transition duration-150 hover:bg-gray-600 border border-cyan/50">
-                {{ $skill }}
-            </span>
-        @endforeach
-    </div>
-</div>
+                        <h3 class="h2 fw-bold mb-4">Education & Experience</h3>
+                        <div class="mb-5">
+                            <h5 class="fw-bold">{{ $education }}</h5>
+                            <p class="text-muted">{{ $experience }}</p>
+                        </div>
+
+                        <h3 class="h2 fw-bold mb-4">Skills</h3>
+                        <div class="mb-5">
+                            @foreach($skills as $skill)
+                                <span class="skill-tag me-2 mb-2">
+                                    {{ $skill }}
+                                </span>
+                            @endforeach
+                        </div>
+
+                        <h3 class="h2 fw-bold mb-4">Contact Information</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><strong>Email:</strong> khan22205101473@diu.edu.bd</li>
+                                    <li class="mb-2"><strong>Phone:</strong> 01707492266</li>
+                                    <li class="mb-2"><strong>Address:</strong> Uttar Patuapara, Natore</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="social-links text-center">
+                                    <a href="https://www.linkedin.com/in/zahin-muntaha-khan-245b96292/?originalSubdomain=bd" target="_blank" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=100081554337406" target="_blank" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                                    <a href="https://sites.google.com/diu.edu.bd/zahinmuntahakhan/home" target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
